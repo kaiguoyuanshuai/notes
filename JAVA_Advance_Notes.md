@@ -14,7 +14,7 @@ ArrayList、LinkedList、Hashtable、HashMap、ConcurrentHashMap、HashSet 实�
 
 
 
-    ![原理图](resources/hashMap/HashMap 数据结构存储原理图.png)
+    ![原理图](resources/hashMap/HashMap_数据结构存储原理图.png)
 
 
 
@@ -51,7 +51,7 @@ i = (n - 1) & hash
 
 
 
-![原理图](resources/javaBase/Java 基础之位运算.png)
+![原理图](resources/javaBase/Java_基础之位运算.png)
 
 
 
