@@ -4,19 +4,17 @@
 
   ##### HashMap 数据结构
 
-  1.7 版本 
+1.7 版本 
+
+
+![原理图](/resources/hashMap/HashMap_数据结构存储原理图.png)
 
 
 
-```
-![原理图](resources/hashMap/HashMap_数据结构存储原理图.png)
-```
 
 
-
-```
 1.8 版本
-```
+
 
 
 
@@ -42,13 +40,13 @@ i = (n - 1) & hash
 
 
 
-![原理图](resources/hashMap/hashcode.png)
+![原理图](/resources/hashMap/hashcode.png)
 
 **附加知识 ：**
 
 
 
-![原理图](resources/javaBase/Java_基础之位运算.png)
+![原理图](/resources/javaBase/Java_基础之位运算.png)
 
 
 
