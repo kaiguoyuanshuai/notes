@@ -12,7 +12,11 @@ ArrayList、LinkedList、Hashtable、HashMap、ConcurrentHashMap、HashSet 实�
 
     1.7 版本 
 
+
+
     ![原理图](resources/hashMap/HashMap 数据结构存储原理图.png)
+
+
 
     1.8 版本
 
@@ -45,7 +49,11 @@ i = (n - 1) & hash
 
 **附加知识 ：**
 
+
+
 ![原理图](resources/javaBase/Java 基础之位运算.png)
+
+
 
 
 
