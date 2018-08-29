@@ -11,10 +11,9 @@
 
 
 
-
-
 ##### 1.8 版本的数据结构
 
+基本与1.7一致 ，只是 Entity 长度大于 8之后 则会进行 转为 红黑树
 
 
 
@@ -99,15 +98,11 @@ i = (n - 1) & hash
 1. 对key的hashCode()做hash，然后再计算index;
 2. 如果没碰撞直接放到bucket里；
 3. 如果碰撞了，以链表的形式存在buckets后；
-
-
-
 4. 如果碰撞导致链表过长(大于等于TREEIFY_THRESHOLD)，就把链表转换成红黑树；
 如果节点已经存在就替换old value(保证key的唯一性)
 5. 如果bucket满了(超过load factor*current capacity)，就要resize。
 
-
-
+##### 源码解析
 
 ```java
 public V put(K key, V value) {
@@ -165,3 +160,11 @@ public V put(K key, V value) {
 
 
 
+#### get HashMap 的数据
+
+##### get 数据的过程 
+1. 计算hash值 计算index 
+2. bucket里的第一个节点，直接命中；
+3. 如果有冲突，则通过key.equals(k)去查找对应的entry
+若为树，则在树中通过key.equals(k)查找，O(logn)；
+若为链表，则在链表中通过key.equals(k)查找，O(n)。
