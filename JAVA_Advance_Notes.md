@@ -18,37 +18,34 @@ ArrayList、LinkedList、Hashtable、HashMap、ConcurrentHashMap、HashSet 实�
 
 
 
-    ##### 如何取出 get put 数组 的下标
+##### 如何取出 get put 数组 的下标
 
-    1、计算hash
+1、计算hash
 
-    ```java
-       static final int hash(Object key) {
-            int h;
-            return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
-        }
-    ```
-
-    2、计算下标i
-
-    ```java
-    n = tab.length
-    i = (n - 1) & hash
-    ```
+```java
+   static final int hash(Object key) {
+        int h;
+        return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
+    }
+```
 
 
+2、计算下标i
 
-    3、效果图如下
+```java
+n = tab.length
+i = (n - 1) & hash
+```
 
-    ![原理图](resources/hashMap/hashcode.png)
+3、效果图如下
 
 
 
-    **附加知识 ：**
+![原理图](resources/hashMap/hashcode.png)
 
-    ![原理图](resources/javaBase/Java 基础之位运算.png)
+**附加知识 ：**
 
-
+![原理图](resources/javaBase/Java 基础之位运算.png)
 
 
 
