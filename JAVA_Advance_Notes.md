@@ -40,14 +40,22 @@ ArrayList、LinkedList、Hashtable、HashMap、ConcurrentHashMap、HashSet 实�
 
 - ThreadLocal 实现原理、应用场景、避免的问题
 
+- volatile 原理
+  - 内存屏障
+
 - synchronized 原理
   - 对象头
   - 锁升级(锁膨胀)
 
+- wait|notify 
+  - 必须先获取锁
+      实际上，wait 方法是调用lock.wait() 方法
+      notify 调用的是lock.notify()方法
 
-- volatile 原理
-  - 内存屏障
-  
+  - 与sleep的区别
+
+
+
 
 
 
