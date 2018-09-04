@@ -16,8 +16,8 @@ ArrayList、LinkedList、Hashtable、HashMap、ConcurrentHashMap、HashSet 实�
 
   - 线程不安全的问题(死循环)
 
-    [美团：Java 8系列之重新认识HashMap](https://tech.meituan.com/java_hashmap.html)
-    [Java HashMap原理解析](https://yikun.github.io/2015/04/01/Java-HashMap%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%8F%8A%E5%AE%9E%E7%8E%B0/)
+    - [美团：Java 8系列之重新认识HashMap](https://tech.meituan.com/java_hashmap.html)
+    - [Java HashMap原理解析](https://yikun.github.io/2015/04/01/Java-HashMap%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%8F%8A%E5%AE%9E%E7%8E%B0/)
 
 
 
@@ -40,8 +40,14 @@ ArrayList、LinkedList、Hashtable、HashMap、ConcurrentHashMap、HashSet 实�
 
 - ThreadLocal 实现原理、应用场景、避免的问题
 
+- synchronized 原理
+  - 对象头
+  - 锁升级(锁膨胀)
 
-- 
+
+- volatile 原理
+  - 内存屏障
+  
 
 
 
