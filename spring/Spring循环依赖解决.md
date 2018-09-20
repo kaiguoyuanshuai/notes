@@ -18,7 +18,7 @@ Spring 循环依赖问题 原理分析
 
 
 
-#### Spring是如何解决循环依赖的
+#### Spring是如何解决循环依赖的（源码分析）
 
 - Spring getBean() 的过程
 - 
@@ -30,9 +30,8 @@ Spring 循环依赖问题 原理分析
 #### Spring对于循环依赖的解决方案是否还有纰漏
 
 - 构造方法注入的bean 
-
 - BeanPostProcessor改变了Bean的版本 
-
-  
+- Prototype 类型的循环依赖无法解决
+-  
 
 #### 既然不能完全解决循环依赖，我们该怎么办
