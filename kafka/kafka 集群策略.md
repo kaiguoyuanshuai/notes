@@ -46,5 +46,6 @@ RoundBobin(轮训)
 - 消费者主动取消订阅topic
 
 #### Rebabance 执行&管理 
+Coordination  管理器 
 
 
