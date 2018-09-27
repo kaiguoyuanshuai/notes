@@ -48,4 +48,8 @@ RoundBobin(轮训)
 #### Rebabance 执行&管理 
 Coordination  管理器 
 
+从所有的broker中发送一条消息，broker 会返回一个负载最小的的broker 作为coordination的节点。
+
+
+
 
