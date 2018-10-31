@@ -22,7 +22,7 @@
 [Mysql 相关内容](Mysql.md)
 
 
-
+[redis 相关内容](redis.md)
 
 
 [Spring 相关内容](Spring.md)
