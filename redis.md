@@ -54,6 +54,16 @@ dir
 #### 复制
 
 
+##### 主从复制开启
+- 通过配置文件  slaveof 指定一个 slaveof host port 选项的配置文件
+- 运行中的redis服务器 SLAVEOF no one  终止复制  SLAVEOF host port 开始复制
+
+##### 主从复制启动
+
+![原理图](/resources/redis 主从复制.png)
+
+
+
 
 #### Redis如何淘汰过期的keys
 
