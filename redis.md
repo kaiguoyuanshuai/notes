@@ -65,6 +65,7 @@ dir
 
 
 
+
 #### Redis如何淘汰过期的keys
 
 - 主动 
@@ -76,6 +77,18 @@ dir
     > 1.测试随机的20个keys进行相关过期检测。
     > 2.删除所有已经过期的keys。 
     > 3.如果有多于25%的keys过期，重复步奏1.
+
+
+#### Redis 内存淘汰策略
+在 `redis.conf`中存在一行配置 `maxmemory-policy volatile-lru` 用来配置 内存淘汰策略 
+ - noeviction 内存不足以容纳写入的数据，新写入的操作会报错
+ - allkeys-lru  内存不足以容纳写入的数据，移除最近最少使用的key(推荐使用)
+ - allkeys-random  内存不足以容纳写入的数据 随机删除key
+ - volatile-lru 内存不足以容纳写入的数据，在设置了过期时间的key空间中，移除最少使用的key
+ - volatile-random 内存不足以容纳写入的数据，在设置了过期时间的key空间中，随机删除某个key 
+ - volatile-ttl 内存不足以容纳写入的数据，在设置了过期时间的key空间中 移除快要过期的key 
+
+
 
 
 #### Redis 使用单线程的优劣式，已经为什么单线程性能还比较高
